@@ -171,6 +171,11 @@ bool MapLoader::m_ParseTileSets(const pugi::xml_node& mapNode)
 
 bool MapLoader::m_ProcessTiles(const pugi::xml_node& tilesetNode)
 {
+	if(m_headlessMode){
+		std::cout << "Caching images deactivated in headless mode." << std::endl;
+		return true;
+	}	
+
 	sf::Uint16 tileWidth, tileHeight, spacing, margin;
 
 	//try and parse tile sizes

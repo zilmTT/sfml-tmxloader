@@ -84,6 +84,9 @@ namespace tmx
 		void SetLayerShader(sf::Uint16 layerId, const sf::Shader& shader);
 		//so we can test if QuadTree is available
         bool QuadTreeAvailable() const;
+		
+		//deactivate caching images or doing any gui stuff when headless is true
+		void setHeadless(bool val);
 
     private:
 		//properties which correspond to tmx
@@ -111,7 +114,7 @@ namespace tmx
 		std::vector<TileInfo> m_tileInfo; //stores information on all the tilesets for creating vertex arrays
 
 		sf::VertexArray m_gridVertices; //used to draw map grid in debug
-		bool m_mapLoaded, m_quadTreeAvailable;
+		bool m_mapLoaded, m_quadTreeAvailable, m_headlessMode;
 		//root node for quad tree partition
 		QuadTreeRoot m_rootNode;
 

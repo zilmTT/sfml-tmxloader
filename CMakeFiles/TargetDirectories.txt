@@ -1,0 +1,7 @@
+/root/sfml-tmxloader/CMakeFiles/BenchMark.dir
+/root/sfml-tmxloader/CMakeFiles/DrawWithDebug.dir
+/root/sfml-tmxloader/CMakeFiles/Isometric.dir
+/root/sfml-tmxloader/CMakeFiles/QuadTree.dir
+/root/sfml-tmxloader/CMakeFiles/ShaderEffects.dir
+/root/sfml-tmxloader/CMakeFiles/pugi.dir
+/root/sfml-tmxloader/CMakeFiles/tmx-loader.dir

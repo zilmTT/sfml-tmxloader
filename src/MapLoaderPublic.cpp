@@ -40,12 +40,18 @@ MapLoader::MapLoader(const std::string& mapDirectory)
 	m_tileRatio			(1.f),
 	m_mapLoaded			(false),
 	m_quadTreeAvailable	(false),
-	m_failedImage		(false)
+	m_failedImage		(false),
+	m_headlessMode		(false)
 {
 	//reserve some space to help reduce reallocations
 	m_layers.reserve(10);
 
 	AddSearchPath(mapDirectory);
+}
+
+
+void MapLoader::setHeadless(bool val){
+	m_headlessMode = val;
 }
 
 bool MapLoader::Load(const std::string& map)
