@@ -17,7 +17,7 @@ endif()
 
 # on MacOSX you need to use the correct stdlib for c++11 features
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -std=c++11")
 endif()
 
 # Make sure that the runtime library gets link statically
